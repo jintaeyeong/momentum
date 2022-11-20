@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+
+    <!-- 자바스크립트 코드 연결 -->
+    <script src="index.js"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* 클래스를 지정한 것들을 한번에 수정해줄 수 있음  */
+        /* .test {
+            font-size: 30px;
+        } */
+        body {
+            /* 이미지 주소를 넣어주면됨 */
+            background-image: url("https://blogpfthumb-phinf.pstatic.net/MjAyMjA0MTBfMTA5/MDAxNjQ5NTE4OTUzNTQz.R38UXsZYe_01N13NBOfbFS6AlarCil9rXLAGktHAOrYg.4wdUg9cf7k5jruSTf0YhbGaPrPUOjnfKFocy852JiM8g.JPEG.jjhtkfkd12/%ED%83%9C%EC%98%81_%EC%97%AC%EC%88%98_%EC%98%A4%EB%8F%99%EB%8F%84_%EC%82%AC%EC%A7%84_%ED%94%84%EB%A1%9C%ED%95%84%EC%9A%A9_.jpg/%25ED%2583%259C%25EC%2598%2581%2B%25EC%2597%25AC%25EC%2588%2598%2B%25EC%2598%25A4%25EB%258F%2599%25EB%258F%2584%2B%25EC%2582%25AC%25EC%25A7%2584%2B%25ED%2594%2584%25EB%25A1%259C%25ED%2595%2584%25EC%259A%25A9%2B.jpg");
+            background-position: center;
+
+            color: white;
+        
+        }
+
+        .time{
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .greeting{
+            font-size: 50px;
+        }
+
+        .todo{
+            font-size:30px;
+        }
+
+        .author{
+            font-size: 25px;
+            font-style: italic;
+        }
+
+        .main{
+            width: 100vw;
+            height: 80vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .quote{
+            width: 100vw;
+            height: 20vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+
+    <script>
+    </script>
+</head>
+
+<!-- Shift + Alt + F 누르면 정렬이 된다. -->
+
+<body> <!-- body는 내용 -->
+    <!-- 배경화면, 시간, 인사말, 명언을 만들어야된다. -->
+
+    <div class="main">
+        <div id="time" class="time">12:00</div>
+        <div class="greeting">Hello, Taeyeong!</div>
+        <div class="todo">주 3회 운동하기!</div>
+    </div>
+    <div class="quote">
+        <div id="author" class="author">- 명언의 저자 -</div>
+        <div id="content" class="content">" 명언의 내용 "</div>
+    </div>
+</body>
+
+</html>
